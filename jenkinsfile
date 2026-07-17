@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         SSH_CRED = 'node-pipeline-key'
-        SERVER_IP = '172.31.13.206'
+        SERVER_IP = '172.31.38.118'
         REMOTE_USER = 'ubuntu'
         APP_DIR = '/home/ubuntu/pythonapp'
     }
@@ -11,7 +11,7 @@ pipeline {
     stages {
         stage('Clone Repo') {
             steps {
-                git url: 'https://github.com/iamtruptimane/pythonapp.git', branch: 'master'
+                git url: 'https://github.com/siddharthwakade6/python-cicd-jenkins.git', branch: 'master'
             }
         }
 
